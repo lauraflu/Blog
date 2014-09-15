@@ -1,0 +1,547 @@
+/* Resetting Styles */
+body {
+	margin: 0; padding: 0;
+	background: #ffffff; 
+	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: smaller;
+}
+
+a {
+	text-decoration: none;
+}
+
+a img {
+	border: none;
+}
+
+p {
+	margin: 0 0 1em;
+}
+
+figure {
+	margin: 0 0 0 0;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+}
+
+
+
+.align-center {
+	display:-moz-box;
+	-moz-box-pack:center;
+	-moz-box-align:center;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+	text-align: center;
+}
+
+.inline-block {
+	display:-moz-inline-stack;
+	display:inline-block;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* general Styles */
+
+.box-resize {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.SmallTitle {
+	font-size: 1.5em;
+}
+
+.BigTitle {
+	font-size: 2em;
+}
+
+.BulkText {
+	font-size: 1.3em;
+}
+
+.PostDate {
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+a {
+	color: #4dbee8;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+div {
+	font-size: 1em;
+}
+
+/* Basic Positioning & Sizing */
+html {
+	width: 100%;
+}
+
+body { 
+ 	width: 100%;
+}
+
+.MainWrapper {
+	width: 62.5%;
+	margin-left: 18.75%;
+	border: 1px solid transparent;
+}
+
+.MainWrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Header Styling */
+
+.MainHeader {
+	position: fixed;
+	width: 100%;
+	height: 300px;
+	background: #ffffff;
+	background: url(stock/bluehair.jpg);
+	z-index: 100;
+	transition: all 0.3s ease-in-out;
+}
+
+.MainHeaderShrink .BlogName, .MainHeaderShrink .MainDescription, .MainHeaderShrinked .BlogName, .MainHeaderShrinked .MainDescription {
+	display: none;
+}
+
+.MainHeaderShrink, .MainHeaderShrinked {
+	overflow: hidden;
+	height: 4em;
+}
+
+/* Subheader */
+
+.Subheader {
+	position: relative;
+	width: 100%;
+	height: 4em;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.Subheader:after {
+	content: "";
+  	display: table;
+  	clear: both;
+}
+
+.MainMenu {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 50%;
+	height: 100%;
+	display: inline;
+	float: left;
+	font-size: 1em;
+	font-variant: small-caps;
+}
+
+.MenuLink {
+	display: table-cell;
+	position: relative;
+	width: 10%;
+	height: 4em;
+	vertical-align: middle;
+	padding-left: 0.5em;
+	color: #000;
+	background: none repeat scroll 0% 0% ;
+	transition: color 0.3s ease-in-out;
+}
+
+.MenuLink:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.MenuSandwich {
+	display: none;
+}
+
+.SocialIcons {
+	display: inline;
+	float: right;
+	position: absolute;
+	right: 0.5em;
+	top: 0;
+	bottom: 0;
+	width: 20px;
+	overflow: hidden;
+	transition: all 0.2s ease-in-out;
+}
+
+.Hover {
+	position: absolute;
+	right: 0;
+	top: 0.4em;
+	width: 20px;
+	height: 40px;
+	display: inline-block;
+	background: rgba(255, 255, 255, 0);
+	background-image: url(images/arrow.svg);
+	background-size: 20px 40px;
+	background-position: center;
+	z-index: 2;
+	transition: all 0.2s;
+}
+
+.IconWrapper {
+	position: absolute;
+	right: -320px;
+	top: 0.4em;
+	transition: all 0.5s;
+	display: inline-block;
+}
+
+.SocialIcons:hover {
+	width: 40%;
+}
+
+.SocialIcons:hover .IconWrapper {
+	transform: translate(-350px, 0);
+}
+
+.SocialLink {
+	display: inline-block;
+	position: relative;
+	width: 40px;
+	height: 40px;
+}
+
+.SocialLink:after {
+	position: absolute;
+	box-shadow: 0 0 0 1px transparent;
+	left: 20px;
+	margin-left: -20px;
+	top: 20px;
+	margin-top: -20px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	content: "";
+	-webkit-box-sizing: content-box; 
+	-moz-box-sizing: content-box; 
+	box-sizing: content-box;
+	-webkit-transition: -webkit-transform 0.2s;
+	-webkit-transform: scale(0.7);
+	-moz-transition: -moz-transform 0.2s;
+	-moz-transform: scale(0.7);
+	-ms-transform: scale(0.7);
+	transition: transform 0.2s;
+	transform: scale(0.7);
+}
+
+.SocialLink:hover:after {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	box-shadow: 0 0 0 3px #c2c2c2;
+}
+
+.SidebarSocialIcon {
+}
+
+svg {
+	fill: #c2c2c2;
+	transition: all 0.3s ease-in-out;
+}
+
+.SocialLink:hover svg {
+	fill: #c2c2c2;
+}
+
+.SocialLink:not(:last-child) {
+	margin-right: 0.5em;
+}
+
+/*end of SubHeader Styling */
+
+/* Main Header Body */
+
+.BlogName {
+	position: absolute;
+	width: 25%;
+	bottom: 0;
+}
+
+.MainDescription {
+	position: absolute;
+	bottom: 0;
+	left: 30%;
+	width: 20%;
+}
+
+
+/* Article Styling */
+
+.PostWrapper {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 310px;
+	text-align: center;
+}
+
+.PostWrapper:after {
+	content: "";
+    display: table;
+	clear: both;
+}
+
+.PostPreview {
+	width: 25%;
+	height: 450px;
+	border: 1px solid #8AC7D0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	background: #ffffff;
+	transition: all 0.25s ease;
+}
+
+.PostPreviewVisual {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	transition: all 0.25s ease-in-out;
+}
+
+.Dummy {
+	padding-top: 100%;
+}
+
+.VisualElement {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transition: all 0.15s ease-in-out;
+}
+
+.Post1 {
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,1) 100%), url("colorful.jpg") no-repeat;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(50%,rgba(255,255,255,0.3)), color-stop(100%,rgba(255,255,255,1))), url("colorful.jpg") no-repeat;
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(255,255,255,0.3) 50%,rgba(255,255,255,1) 100%), url("colorful.jpg") no-repeat;
+	background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(255,255,255,0.3) 50%,rgba(255,255,255,1) 100%), url("colorful.jpg") no-repeat;
+	background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(255,255,255,0.3) 50%,rgba(255,255,255,1) 100%), url("colorful.jpg") no-repeat;
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(255,255,255,0.3) 50%,rgba(255,255,255,1) 100%), url("colorful.jpg") no-repeat;
+	background-size: 100%;
+}
+
+.ArticleImage {
+	width: 100%;
+	transition: all 0.25s ease;
+}
+
+.PostInfoWrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -75px;
+	margin-top: -75px;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background: rgba(135, 135, 200, 0.6);
+	color: white;
+	text-align: center;
+	z-index: 2;
+	transition: all 0.25s ease-in-out;
+	transform: scale(0, 0);
+	opacity: 0;
+}
+
+.HoverMessage {
+	margin: 0 auto;
+	line-height: 150px;
+	width: 150px;
+	font-size: 1.5em;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.HoverMessage a {
+	color: #fff;
+}
+
+.PostPreviewContent {
+	position: absolute;
+	bottom: 1em;
+	z-index: 2;
+	padding: 0 1em;
+	text-align: left;
+}
+
+
+
+.PostTextPreview {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	text-overflow: hidden;
+	padding-top: 0.25em;
+}
+
+/* Article Hover Effects */
+.PostPreview:hover {
+	border: 1px solid transparent;
+}
+
+.PostPreview:hover .PostInfoWrapper {
+	transform: scale(1, 1);	
+	opacity: 1;
+}
+
+.PostPreview:hover .VisualElement {
+	border-radius: 50%;
+	transition: all 0.25s ease-in-out;
+}
+
+.PostPreview:hover .PostPreviewVisual {
+	/*transform: scale(0.8);*/
+}
+
+/* Post Page Styling */
+
+.FullPost {
+	text-align: left;
+	padding: 1em 1em 1em 1em;
+	background-color: #f8e3d2;
+}
+
+.ShrinkedHeaderView {
+	margin-top: 5em;		
+}
+
+
+/* media queries */
+
+@media all and (max-width: 1700px) {
+	.MainWrapper {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.PostWrapper {
+		width: 70%;
+	}
+
+	.PostPreview {
+		width: 30%;
+	}
+}
+
+@media all and (max-width: 1024px) {
+	.PostWrapper {
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 768px) {
+	.PostPreview {
+		width: 45%;
+	}
+}
+
+@media all and (max-width: 590px) {
+	.Hover {
+		top: 0.75em;
+		width: 15px;
+		height: 30px;
+		background-size: 15px 30px;
+	}
+
+	.IconWrapper {
+		top: 0.75em;
+	}
+
+	.SocialLink {
+		width: 30px;
+		height: 30px;
+	}
+
+	.SocialIcons:hover {
+		width: 60%;
+	}
+
+	.SocialLink:after {
+		width: 30px;
+		height: 30px;
+		left: 15px;
+		top: 15px;
+		margin-left: -15px;
+		margin-top: -15px;
+	}
+
+	.PostPreview {
+		width: 47%;
+	}
+}
+
+@media all and (max-width: 480px) {
+	.PostPreview {
+		width: 90%;
+		margin-bottom: 10px;
+	}
+
+	.MainMenu {
+		position: absolute;
+		top: 4em;
+		background: white;
+		height: 0;
+	}
+
+	.MenuLink {
+		display: block;
+		width: 60%;
+		font-size: 1.3em;
+		line-height: 2em;
+		height: 2em;
+		background: rgba(15, 30, 134, 0.5);
+		visibility: hidden;
+	}
+
+	.MenuSandwich {
+		position: absolute;
+		display: inline;
+		top: -4em;
+		left: 0;
+		content: "";
+		width: 40px;
+		height: 4em;
+		background: url(images/iconmonstr-menu-icon.svg);
+		background-size: 40px 40px;
+		background-position: center;
+		-webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+	}
+
+	.MenuLinkHover {
+		visibility: visible;
+	}
+
+}

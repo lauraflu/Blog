@@ -1,0 +1,165 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="home_style_redesign.css">
+<script src="javascript/jQuery.js"></script>
+
+</head>
+
+<body>
+
+	<script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '{your-app-id}',
+          xfbml      : true,
+          version    : 'v2.0'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+	<header class="MainHeader box-resize MainHeaderShrinked">
+		<div class="Subheader box-resize">
+			<div class="MainMenu">
+				<a href="" class="MenuLink box-resize">About</a>
+				<a href="" class="MenuLink box-resize">Blog </a>
+				<a href="" class="MenuLink box-resize">Works</a>
+				<a href="" class="MenuLink box-resize">Contact</a>
+			</div>
+
+			<div class="SocialIcons">
+
+					<div class="IconWrapper">
+						<a href="#" class="SocialLink">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="SidebarSocialIcon" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+								<path id="facebook-circle-icon" d="M256.417,50c-113.771,0-206,92.229-206,206s92.229,206,206,206s206-92.229,206-206S370.188,50,256.417,50z M317.385,171.192c0,0-20.604,0-28.789,0c-10.162,0-12.28,4.163-12.28,14.678c0,8.75,0,25.404,0,25.404 h41.069l-3.951,44.596h-37.118v133.227h-53.2V256.435h-27.666v-45.16h27.666c0,0,0-6.493,0-35.565 c0-33.379,17.849-50.807,57.437-50.807c6.484,0,36.833,0,36.833,0V171.192z"/>
+							</svg>
+						</a>
+
+						<a href="#" class="SocialLink">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="SidebarSocialIcon GitHubICon box-resize" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+								<path id="github-icon" d="M256,55.083c-113.764,0-206,92.237-206,206
+									c0,91.013,59.025,168.246,140.887,195.472c10.293,1.911,13.613-4.459,13.613-9.908v-38.356C147.199,420.764,135.262,384,135.262,384
+									c-9.354-23.822-22.865-30.159-22.865-30.159c-18.693-12.774,1.408-12.523,1.408-12.523c20.688,1.459,31.584,21.24,31.584,21.24
+									c18.373,31.483,48.18,22.381,59.949,17.117c1.844-13.312,7.174-22.397,13.076-27.544c-45.768-5.197-93.848-22.867-93.848-101.81
+									c0-22.498,8.047-40.872,21.225-55.289c-2.146-5.197-9.188-26.152,1.979-54.518c0,0,17.301-5.532,56.662,21.123
+									c16.445-4.56,34.066-6.856,51.568-6.94c17.502,0.084,35.154,2.381,51.6,6.94c39.33-26.655,56.596-21.123,56.596-21.123
+									c11.217,28.365,4.158,49.32,2.029,54.518c13.211,14.417,21.207,32.791,21.207,55.289c0,79.127-48.197,96.545-94.064,101.642
+									c7.375,6.388,14.133,18.943,14.133,38.155c0,27.561,0,49.757,0,56.529c0,5.482,3.301,11.903,13.746,9.892
+									C403.057,429.264,462,352.08,462,261.084C462,147.321,369.762,55.083,256,55.083z"/>
+							</svg>
+						</a>
+
+						<a href="#" class="SocialLink">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="SidebarSocialIcon" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+								<path id="linkedin-circle-icon" d="M256.417,50c-113.771,0-206,92.229-206,206s92.229,206,206,206s206-92.229,206-206 S370.188,50,256.417,50z M201.456,355.592h-45.229V209.469h45.229V355.592z M178.626,190.333c-14.771,0-26.746-12.072-26.746-26.963 s11.975-26.963,26.746-26.963c14.77,0,26.745,12.072,26.745,26.963S193.396,190.333,178.626,190.333z M370.953,355.592h-45.01 c0,0,0-55.666,0-76.703s-7.991-32.781-24.626-32.781c-18.103,0-27.562,12.231-27.562,32.781c0,22.504,0,76.703,0,76.703h-43.38 V209.469h43.38v19.679c0,0,13.047-24.137,44.032-24.137c30.986,0,53.165,18.918,53.165,58.058 C370.953,302.209,370.953,355.592,370.953,355.592z"/>
+							</svg>
+						</a>
+
+						<a href="#" class="SocialLink">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="SidebarSocialIcon" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+								<path id="twitter-4-icon" d="M256,50C142.229,50,50,142.229,50,256s92.229,206,206,206s206-92.229,206-206S369.771,50,256,50z M359.599,220.506c3.021,67.199-47.096,142.124-135.802,142.124c-26.981,0-52.096-7.911-73.238-21.466 c25.347,2.987,50.646-4.044,70.734-19.786c-20.907-0.386-38.554-14.198-44.632-33.181c7.486,1.432,14.851,1.013,21.575-0.816 c-22.976-4.617-38.839-25.317-38.321-47.453c6.44,3.58,13.81,5.729,21.642,5.977c-21.278-14.221-27.303-42.318-14.785-63.789 c23.563,28.906,58.77,47.928,98.478,49.92c-6.969-29.886,15.702-58.667,46.542-58.667c13.742,0,26.16,5.802,34.874,15.088 c10.884-2.143,21.108-6.119,30.341-11.594c-3.567,11.157-11.144,20.521-21.008,26.433c9.665-1.153,18.874-3.722,27.441-7.523 C377.035,205.355,368.935,213.771,359.599,220.506z"/>
+							</svg>
+						</a>
+					</div>
+
+					<div class="Hover">
+						<a href="#">
+						</a>
+					</div>
+			</div>
+		</div> <!-- end of subheader -->
+
+		<div class="BlogName box-resize">
+			Name
+		</div>
+
+		<div class="MainDescription">
+			I love cats I love cats I love cats I love cats I love cats I love cats I love cats 
+		</div>
+
+
+
+
+	</header>
+
+	<div class="MainWrapper box-resize">
+		<main class="PostWrapper box-resize LeftAlign ShrinkedHeaderView">
+			<article class="FullPost">
+				<header class="BigTitle">
+					Post Title
+				</header>
+
+				<time class="PostDate">
+					Current Date
+				</time>
+
+				<div class="PostContent BulkText">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							consequat. Duis aute irure dolor in reprehenderit in
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					</p>
+
+					<p>
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							consequat. Duis aute irure dolor in reprehenderit in
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							consequat. Duis aute irure dolor in reprehenderit in
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							consequat. Duis aute irure dolor in reprehenderit in
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					</p>
+
+					<p>
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							consequat. Duis aute irure dolor in reprehenderit in
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							consequat. Duis aute irure dolor in reprehenderit in
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					</p>
+
+
+					<p>
+							consequat. Duis aute irure dolor in reprehenderit in
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							consequat. Duis aute irure dolor in reprehenderit in
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							consequat. Duis aute irure dolor in reprehenderit in
+					</p>
+				</div>
+
+				<div class="fb-like" data-href="blog_post.html" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+
+			</article>
+		</main>
+	</div>
+
+	<script src="javascript/GeneralJavascript.js"></script>
+</body>
+
+</html>
